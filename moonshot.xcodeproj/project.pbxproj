@@ -16,6 +16,7 @@
 		678A12422692817E00F746AD /* astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678A12412692817E00F746AD /* astronaut.swift */; };
 		678A1244269281C500F746AD /* bundle-decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678A1243269281C500F746AD /* bundle-decodable.swift */; };
 		678A1246269284D500F746AD /* mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678A1245269284D500F746AD /* mission.swift */; };
+		67AB67712692BBB6001BB269 /* missionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB67702692BBB6001BB269 /* missionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		678A12412692817E00F746AD /* astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astronaut.swift; sourceTree = "<group>"; };
 		678A1243269281C500F746AD /* bundle-decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "bundle-decodable.swift"; sourceTree = "<group>"; };
 		678A1245269284D500F746AD /* mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mission.swift; sourceTree = "<group>"; };
+		67AB67702692BBB6001BB269 /* missionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				672DF2D82692777100F90D89 /* moonshotApp.swift */,
 				672DF2DA2692777100F90D89 /* ContentView.swift */,
+				67AB67702692BBB6001BB269 /* missionView.swift */,
 				678A1245269284D500F746AD /* mission.swift */,
 				678A12412692817E00F746AD /* astronaut.swift */,
 				678A1243269281C500F746AD /* bundle-decodable.swift */,
@@ -158,6 +161,7 @@
 				678A12422692817E00F746AD /* astronaut.swift in Sources */,
 				672DF2DB2692777100F90D89 /* ContentView.swift in Sources */,
 				672DF2D92692777100F90D89 /* moonshotApp.swift in Sources */,
+				67AB67712692BBB6001BB269 /* missionView.swift in Sources */,
 				678A1244269281C500F746AD /* bundle-decodable.swift in Sources */,
 				678A1246269284D500F746AD /* mission.swift in Sources */,
 			);
