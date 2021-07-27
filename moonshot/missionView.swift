@@ -11,6 +11,8 @@ struct MissionView: View {
     
     var mission: Mission
     
+    var astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+    
     var body: some View {
         GeometryReader { geometry in
             ScrollView(.vertical) {
@@ -35,7 +37,10 @@ struct MissionView: View {
                         .bold()
                     LazyVGrid(columns: Array(repeating: .init(.flexible()), count: 2)) {
                         ForEach(mission.crew, id: \.self.name) { crew in
-                            CrewNav(crew: crew, dest: Text("Destination"))
+                            CrewNav(crew: crew, dest: AstroView(astronaut: astronauts.first(where: {
+                                astronaut in
+                                astronaut.id == crew.name
+                            }) ?? astronauts[0]))
                         }
                     }
                 }
@@ -46,7 +51,7 @@ struct MissionView: View {
 
 struct CrewNav: View {
     var crew: Mission.CrewRole
-    var dest: Text
+    var dest: AstroView
     
     var body: some View {
         NavigationLink(destination: dest) {

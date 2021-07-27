@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
-    
     var missions: [Mission] = Bundle.main.decode("missions.json")
     
     var body: some View {
